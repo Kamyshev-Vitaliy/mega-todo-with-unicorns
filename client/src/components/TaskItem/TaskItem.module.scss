@@ -1,0 +1,47 @@
+.check__box {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+}
+
+.taskItemContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+
+  & + &, &:first-child {
+    border-bottom: 1px solid gainsboro;
+  }
+}
+
+.textActive {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.taskItemText {
+  margin: 0 0 0 16px;
+}
+
+.taskItemDelete {
+  color: #ccc;
+  margin-left: auto;
+
+  &:hover {
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.go_check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+  color: #567650;
+}

@@ -1,0 +1,155 @@
+
+
+.ant-layout{
+    height: 100vh;
+}
+.ant-form{
+    max-width: 600px;
+    margin: 30px auto 0 !important;
+}
+.ant-btn{
+    width: 190px;
+    margin: 0 auto;
+    display: block !important;
+}
+.ant-form-horizontal{
+    text-align: center;
+}
+.site-page-header-ghost-wrapper{
+    background-color: #0000a0;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.ant-page-header{
+    background-color: transparent !important;
+}
+.ant-page-header-heading-extra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-page-header-ghost-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.ant-page-header{
+    padding-right: 0 !important;
+}
+.ant-layout-header{
+    line-height: 0;
+}
+.fa_home {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+&:hover{
+     color: #fff;
+ }
+}
+.ant-layout-header{
+    height: auto !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.ant-col-8{
+    flex: 0 !important;
+    max-width: 100% !important;
+}
+.ant-form-item-label{
+    overflow: visible !important;
+}
+.ant-col-16{
+    max-width: 100% !important;
+}
+.ant-col-offset-8{
+    margin-left: auto !important;
+}
+
+.todo_home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add_item_task{
+    padding: 0 0 10px 0;
+    max-height: 335px;
+    overflow: auto;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width:none;
+    &::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+}
+
+
+
+
+.back_drop{
+    display: none;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 900;
+    &__active {
+        display: block;
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+
+.back_drop_loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #57feff;
+    margin: -25px auto;
+    animation: spin 1s ease-in-out infinite;
+}
+.ant-spin{
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    width: 30px !important;
+    height: 30px !important;
+    transform: translate(-50%,-50%);
+}
+.ant-spin-dot-item{
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.unicorn {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    width: 50px !important;
+    height: 50px !important;
+    transform: translate(-50%,-50%);
+}
+@keyframes spin {
+    from {
+        transform: rotate3d(2, -1, -1, 0turn);
+    }
+    to {
+        transform: rotate3d(2, -1, -1, 1turn);
+    }
+}
+
+.validation_alert{
+    margin-bottom: 40px !important;
+}

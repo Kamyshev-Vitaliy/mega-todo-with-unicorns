@@ -1,0 +1,36 @@
+.footer {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+  display:flex;
+  justify-content: space-between;
+}
+
+.footer:nth-child(1){
+  text-align: left !important;
+}
+
+.footer:last-child{
+  text-align: right !important;
+}
+
+.textButton {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  &:hover {
+     color: black;
+   }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.filter_button_footer{
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
