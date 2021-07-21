@@ -20,8 +20,8 @@
   color: #ccc;
   cursor: pointer;
   &:hover {
-     color: black;
-   }
+    color: black;
+  }
 }
 
 .hidden {
@@ -33,4 +33,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .footer{
+    flex-direction: column;
+  }
+  .textButton{
+    width: 100% !important;
+  }
+  .filter_button_footer{
+    width: 100% !important;
+    margin: 5px 0;
+  }
+  .footer:nth-child(1){
+    text-align: center !important;
+  }
+  .footer:last-child{
+    text-align: center !important;
+  }
+  .regulate_btn{
+    margin: 5px 0 !important;
+  }
 }

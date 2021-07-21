@@ -44,9 +44,9 @@
     cursor: pointer;
     width: 30px;
     height: 30px;
-&:hover{
-     color: #fff;
- }
+    &:hover{
+        color: #fff;
+    }
 }
 .ant-layout-header{
     height: auto !important;
@@ -152,4 +152,40 @@
 
 .validation_alert{
     margin-bottom: 40px !important;
+}
+
+@media screen and (max-width: 600px){
+    .ant-page-header-heading-extra{
+        flex-direction: column;
+    }
+    .ant-page-header-heading-extra > *{
+        margin-left: 0 !important;
+        margin-top: 12px;
+    }
+    .ant-layout-header{
+        padding: 0 20px !important;
+    }
+    .ant-form-item-label{
+        text-align: center;
+    }
+    .ant-form-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ant-col-16{
+        width: 100%;
+    }
+    .ant-row{
+        flex-flow: column !important;
+    }
+    .ant-form{
+        padding: 0 15px !important;
+        margin: 0 !important;
+    }
+    .ant-layout-content{
+        padding: 0 10px;
+    }
+
 }
